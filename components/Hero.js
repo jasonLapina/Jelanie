@@ -20,9 +20,20 @@ function Hero() {
       overflow='hidden'
       h='90vh'
     >
-      <Box maxW='768px' justifySelf='center'>
+      <Box
+        bgSize='cover'
+        bgRepeat='no-repeat'
+        bgPos='-20px center'
+        maxW='768px'
+        justifySelf='center'
+        py='120px'
+      >
         <VStack align='normal' gap='24px'>
-          <Text fontWeight='semibold' fontSize='32px'>
+          <Text
+            textShadow='1px 1px white'
+            fontWeight='semibold'
+            fontSize='32px'
+          >
             Email Copywriter/Marketer
           </Text>
           <Heading
@@ -34,14 +45,18 @@ function Hero() {
           >
             Jelanie Gapas
           </Heading>
-          <Text fontSize='18px'>
+          <Text
+            textShadow='1px 1px white'
+            fontWeight='semibold'
+            fontSize='18px'
+          >
             Helping e-commerce brands boost their revenue with email marketing
             strategies that convert subscribers into brand loyalists and repeat
             buyers.
           </Text>
           <HStack gap='32px'>
-            <MyBtn>CTA1</MyBtn>
-            <MyBtn>CTA2</MyBtn>
+            <MyBtn border='solid 2px orangered'>CTA1</MyBtn>
+            <MyBtn border='solid 2px orangered'>CTA2</MyBtn>
           </HStack>
         </VStack>
       </Box>
