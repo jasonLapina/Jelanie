@@ -2,13 +2,13 @@ import { Box, Grid, Heading, Text } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 function Experience() {
   return (
-    <Box mb='120px' bgColor='yellow.100'>
+    <Box mb='120px' bgColor='rgba(255,255,0,.75)'>
       <SectionLayout>
         <Grid gridTemplateColumns='1fr 1fr'>
           <Box />
           <Box>
             <Heading textTransform='uppercase' fontSize='8vh'>
-              12 of the world's top creative minds
+              12 of the world&apos;s top creative minds
               <Box
                 as='span'
                 style={{
@@ -17,7 +17,7 @@ function Experience() {
                 color='transparent'
               >
                 {" "}
-                in Asia's biggest & most influential creative conference
+                in Asia&apos;s biggest & most influential creative conference
               </Box>
             </Heading>
             <Text mt='24px' fontSize='18px' fontWeight='semibold'>

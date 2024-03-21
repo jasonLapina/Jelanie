@@ -8,6 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Marquee from "react-fast-marquee";
+import MyBtn from "./shared/MyBtn";
 
 const dummyClients = Array.from({ length: 10 });
 function Hero() {
@@ -29,8 +30,8 @@ function Hero() {
             perspiciatis, optio, animi
           </Text>
           <HStack gap='32px'>
-            <Button>CTA1</Button>
-            <Button>CTA2</Button>
+            <MyBtn>CTA1</MyBtn>
+            <MyBtn>CTA2</MyBtn>
           </HStack>
         </VStack>
       </Box>
