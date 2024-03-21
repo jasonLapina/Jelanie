@@ -17,7 +17,7 @@ function Hero() {
       px='16px'
       gridTemplateColumns='2fr 1fr'
       overflow='hidden'
-      h='75vh'
+      h='90vh'
     >
       <Box maxW='640px' justifySelf='center'>
         <VStack align='normal' gap='24px'>
@@ -38,17 +38,18 @@ function Hero() {
       <Marquee
         direction='up'
         style={{
-          transform: "rotate(110deg)",
+          transform: "rotate(110deg) scaleX(1.2)",
           overflow: "hidden",
-          top: 0,
         }}
+        speed={125}
       >
         {dummyClients.map((_, i) => (
           <Box
             key={i}
-            m='24px'
+            mx='80px'
+            my='16px'
             bgColor='red'
-            h='320px'
+            h='400px'
             w='320px'
             borderRadius='15px'
           />
