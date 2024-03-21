@@ -1003,15 +1003,10 @@
   resolved "https://registry.npmjs.org/@eslint/js/-/js-8.57.0.tgz"
   integrity sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==
 
-"@fontsource/open-sans@^5.0.27":
-  version "5.0.27"
-  resolved "https://registry.npmjs.org/@fontsource/open-sans/-/open-sans-5.0.27.tgz"
-  integrity sha512-tFTqx2TE9srmM3pMEHldw0lTglqhKwFX6PVDEL0OF9xNT0x5W9brsezFHhV/U36pQV9So7S0vo4yVpnLzBBQew==
-
-"@fontsource/raleway@^5.0.17":
-  version "5.0.17"
-  resolved "https://registry.npmjs.org/@fontsource/raleway/-/raleway-5.0.17.tgz"
-  integrity sha512-JQ86C+y7jSnaxKaqhYX5i6suc7IgUvAkVnP+Z7iWvtrZRl94nXzUU89E84eMq6tCOmbBin/uvtAGfgdJGskT1A==
+"@fontsource/chilanka@^5.0.19":
+  version "5.0.19"
+  resolved "https://registry.npmjs.org/@fontsource/chilanka/-/chilanka-5.0.19.tgz"
+  integrity sha512-iidib3eUttJluOTPnNGMmwkj6ONvt5cQmTvO/+FaC5eVe9vDIV4wbiyb7v69ewvCIpWNGmEeKJV2Nmtu/rizyg==
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"

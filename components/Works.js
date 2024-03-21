@@ -7,7 +7,7 @@ function Works() {
         textAlign='center'
         fontSize='12vh'
         style={{
-          WebkitTextStroke: ".15vw red",
+          WebkitTextStroke: ".1vw black",
         }}
         color='transparent'
       >

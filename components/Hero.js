@@ -16,18 +16,28 @@ function Hero() {
     <Grid
       alignItems='center'
       px='16px'
-      gridTemplateColumns='2fr 1fr'
+      gridTemplateColumns='10fr 1fr'
       overflow='hidden'
       h='90vh'
     >
-      <Box maxW='640px' justifySelf='center'>
+      <Box maxW='768px' justifySelf='center'>
         <VStack align='normal' gap='24px'>
-          <Text fontSize='24px'>subheading</Text>
-          <Heading fontSize='48px'>Heading</Heading>
-          <Text fontSize=''>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-            officiis eaque deserunt veritatis dolores repellat rem autem quos
-            perspiciatis, optio, animi
+          <Text fontWeight='semibold' fontSize='32px'>
+            Email Copywriter/Marketer
+          </Text>
+          <Heading
+            fontSize='80px'
+            style={{
+              WebkitTextStroke: ".05vw black",
+            }}
+            color='white'
+          >
+            Jelanie Gapas
+          </Heading>
+          <Text fontSize='18px'>
+            Helping e-commerce brands boost their revenue with email marketing
+            strategies that convert subscribers into brand loyalists and repeat
+            buyers.
           </Text>
           <HStack gap='32px'>
             <MyBtn>CTA1</MyBtn>

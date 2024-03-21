@@ -2,13 +2,12 @@ import { Box, ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.css";
 
 import { extendTheme } from "@chakra-ui/react";
-import "@fontsource-variable/open-sans";
-import "@fontsource-variable/raleway";
+
+import "@fontsource/chilanka";
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Open Sans', sans-serif`,
-    body: `'Raleway', sans-serif`,
+    heading: `'Chilanka', cursive`,
   },
 });
 

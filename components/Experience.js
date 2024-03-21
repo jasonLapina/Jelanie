@@ -7,7 +7,7 @@ function Experience() {
         <Grid gridTemplateColumns='1fr 1fr'>
           <Box />
           <Box>
-            <Heading textTransform='uppercase' fontSize='8vh'>
+            <Text fontWeight='bold' textTransform='uppercase' fontSize='8vh'>
               12 of the world&apos;s top creative minds
               <Box
                 as='span'
@@ -19,7 +19,7 @@ function Experience() {
                 {" "}
                 in Asia&apos;s biggest & most influential creative conference
               </Box>
-            </Heading>
+            </Text>
             <Text mt='24px' fontSize='18px' fontWeight='semibold'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
               laudantium, natus dicta earum iste numquam suscipit nesciunt quis
