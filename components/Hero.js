@@ -64,7 +64,7 @@ function Hero() {
       <Marquee
         direction='up'
         style={{
-          transform: "rotate(110deg) scaleX(1.2)",
+          transform: "rotate(285deg) scaleX(1.2)",
           overflow: "hidden",
         }}
         speed={125}
