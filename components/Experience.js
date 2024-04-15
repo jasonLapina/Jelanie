@@ -1,6 +1,7 @@
-import { Box, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Grid, Text } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import MyBtn from "./shared/MyBtn";
+
 function Experience() {
   return (
     <Box mb='120px' bgColor='rgba(255,255,0,.75)'>
