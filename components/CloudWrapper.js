@@ -13,6 +13,7 @@ export default function CloudWrapper({ children, extendedProps }) {
       fontFamily='Chilanka'
       textAlign='center'
       fontWeight='semibold'
+      pos='relative'
     >
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, { ...child.props, ...extendedProps });

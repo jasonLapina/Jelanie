@@ -1,30 +1,72 @@
 import { HStack, Text } from "@chakra-ui/react";
 import CloudWrapper from "./CloudWrapper";
+import { useEffect, useState } from "react";
+
+const words = ["BC", "LP", "PD", "SOC", "EN", "DR", "BP"];
 
 export default function WordCloud() {
+  const [highLighted, setHighLighted] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHighLighted((prev) => (prev >= words.length - 1 ? 0 : prev + 1));
+    }, 750);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <CloudWrapper>
+      {/* TOP PART */}
       <HStack justify='center'>
-        <CloudItem>B2C</CloudItem>
-        <CloudItem fontSize='24px'>LANDING PAGES</CloudItem>
-        <CloudItem textAlign='left'>PRODUCT DESCRIPTION</CloudItem>
-      </HStack>
-      <HStack mt='48px' justify='center'>
+        <CloudItem color={words[highLighted] === "BC" ? "fuchsia" : "black"}>
+          B2C
+        </CloudItem>
         <CloudItem
-          transform='rotate(270deg) translateX(16px)'
+          color={words[highLighted] === "LP" ? "fuchsia" : "black"}
+          fontSize='24px'
+        >
+          LANDING PAGES
+        </CloudItem>
+        <CloudItem
+          color={words[highLighted] === "PD" ? "fuchsia" : "black"}
+          textAlign='left'
+        >
+          PRODUCT DESCRIPTION
+        </CloudItem>
+      </HStack>
+      {/* MIDDLE PART */}
+      <HStack mt='56px' justify='center'>
+        <CloudItem
+          color={words[highLighted] === "SOC" ? "fuchsia" : "black"}
+          transform='rotate(270deg) translate(16px, 24px)'
           maxW='180px'
           lineHeight='48px'
           fontSize='48px'
+          textAlign='right'
         >
           SOCIAL MEDIA ADS
         </CloudItem>
         <CloudItem
-          flexShrink='1'
+          color={words[highLighted] === "EN" ? "fuchsia" : "black"}
           textAlign='left'
-          lineHeight='64px'
+          alignSelf='start'
           fontSize='64px'
         >
           EMAIL NEWSLETTER
+        </CloudItem>
+      </HStack>
+      {/* BOTTOM PART */}
+      <HStack mt='-95px' justify='center'>
+        <CloudItem
+          color={words[highLighted] === "DR" ? "fuchsia" : "black"}
+          fontSize='24px'
+        >
+          direct-response
+        </CloudItem>
+        <CloudItem
+          color={words[highLighted] === "BP" ? "fuchsia" : "black"}
+          textAlign='left'
+        >
+          BLOG POSTS
         </CloudItem>
       </HStack>
     </CloudWrapper>
@@ -38,6 +80,7 @@ function CloudItem(props) {
       flexShrink='0'
       display='inline'
       w='fit-content'
+      transition='color .4s'
       {...props}
     >
       {props.children}
