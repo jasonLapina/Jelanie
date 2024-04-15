@@ -29,13 +29,6 @@ function Hero() {
         py='120px'
       >
         <VStack align='normal' gap='24px'>
-          <Text
-            textShadow='1px 1px white'
-            fontWeight='semibold'
-            fontSize='32px'
-          >
-            Email Copywriter/Marketer
-          </Text>
           <Heading
             fontSize='80px'
             style={{
@@ -43,20 +36,18 @@ function Hero() {
             }}
             color='white'
           >
-            Jelanie Gapas
+            Hi there, it&apos;s Jel.
           </Heading>
           <Text
             textShadow='1px 1px white'
             fontWeight='semibold'
-            fontSize='18px'
+            fontSize='24px'
           >
-            Helping e-commerce brands boost their revenue with email marketing
-            strategies that convert subscribers into brand loyalists and repeat
-            buyers.
+            I&apos;m here to put words to work for your business.
           </Text>
           <HStack gap='32px'>
-            <MyBtn border='solid 2px orangered'>CTA1</MyBtn>
-            <MyBtn border='solid 2px orangered'>CTA2</MyBtn>
+            <MyBtn border='solid 2px orangered'>VIEW MY PORTFOLIO</MyBtn>
+            {/* <MyBtn border='solid 2px orangered'>CTA2</MyBtn> */}
           </HStack>
         </VStack>
       </Box>
