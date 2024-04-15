@@ -1,6 +1,7 @@
 import { Box, Grid, Text } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import MyBtn from "./shared/MyBtn";
+import WordCloud from "./WordCloud";
 
 function Experience() {
   return (
@@ -57,6 +58,7 @@ function Experience() {
           </Box>
         </Grid>
       </SectionLayout>
+      <WordCloud />
     </Box>
   );
 }

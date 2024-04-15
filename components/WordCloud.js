@@ -14,61 +14,77 @@ export default function WordCloud() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <CloudWrapper>
-      {/* TOP PART */}
-      <HStack justify='center'>
-        <CloudItem highLighted={words[highLighted] === "BC"}>B2C</CloudItem>
-        <CloudItem highLighted={words[highLighted] === "LP"} fontSize='24px'>
-          LANDING PAGES
-        </CloudItem>
-        <CloudItem highLighted={words[highLighted] === "PD"} textAlign='left'>
-          PRODUCT DESCRIPTION
-        </CloudItem>
-      </HStack>
-      {/* MIDDLE PART */}
-      <HStack mt='56px' justify='center'>
-        <CloudItem
-          highLighted={words[highLighted] === "SOC"}
-          transform='rotate(270deg) translate(16px, 24px)'
-          maxW='180px'
-          lineHeight='48px'
-          fontSize='48px'
-          textAlign='right'
-        >
-          SOCIAL MEDIA ADS
-        </CloudItem>
-        <CloudItem
-          highLighted={words[highLighted] === "EN"}
+    <>
+      <Text
+        textAlign='center'
+        fontFamily='Special Elite'
+        fontSize='32px'
+        fontWeight='semibold'
+        mb='-24px'
+      >
+        ...but what exactly can I do?
+      </Text>
+      <CloudWrapper>
+        {/* TOP PART */}
+        <HStack justify='center'>
+          <CloudItem highLighted={words[highLighted] === "BC"}>B2C</CloudItem>
+          <CloudItem highLighted={words[highLighted] === "LP"} fontSize='24px'>
+            LANDING PAGES
+          </CloudItem>
+          <CloudItem highLighted={words[highLighted] === "PD"} textAlign='left'>
+            PRODUCT DESCRIPTION
+          </CloudItem>
+        </HStack>
+        {/* MIDDLE PART */}
+        <HStack mt='56px' justify='center'>
+          <CloudItem
+            highLighted={words[highLighted] === "SOC"}
+            transform='rotate(270deg) translate(16px, 24px)'
+            maxW='180px'
+            lineHeight='48px'
+            fontSize='48px'
+            textAlign='right'
+          >
+            SOCIAL MEDIA ADS
+          </CloudItem>
+          <CloudItem
+            highLighted={words[highLighted] === "EN"}
+            textAlign='left'
+            alignSelf='start'
+            fontSize='64px'
+            fontFamily='Special Elite'
+          >
+            EMAIL NEWSLETTER
+          </CloudItem>
+        </HStack>
+        {/* BOTTOM PART */}
+        <HStack mt='-95px' justify='center'>
+          <CloudItem highLighted={words[highLighted] === "DR"} fontSize='24px'>
+            direct-response
+          </CloudItem>
+          <CloudItem highLighted={words[highLighted] === "BP"} textAlign='left'>
+            BLOG POSTS
+          </CloudItem>
+        </HStack>
+        <Box
+          mt='16px'
           textAlign='left'
-          alignSelf='start'
-          fontSize='64px'
-          fontFamily='Special Elite'
+          transform='translateX(72px)'
+          w='fit-content'
         >
-          EMAIL NEWSLETTER
-        </CloudItem>
-      </HStack>
-      {/* BOTTOM PART */}
-      <HStack mt='-95px' justify='center'>
-        <CloudItem highLighted={words[highLighted] === "DR"} fontSize='24px'>
-          direct-response
-        </CloudItem>
-        <CloudItem highLighted={words[highLighted] === "BP"} textAlign='left'>
-          BLOG POSTS
-        </CloudItem>
-      </HStack>
-      <Box mt='16px' textAlign='left' transform='translateX(72px)'>
-        <CloudItem highLighted={words[highLighted] === "SMS"}>
-          SMS CAMPAIGNS
-        </CloudItem>
-        <CloudItem
-          highLighted={words[highLighted] === "SL"}
-          fontSize='24px'
-          ml='8px'
-        >
-          short/long form
-        </CloudItem>
-      </Box>
-    </CloudWrapper>
+          <CloudItem highLighted={words[highLighted] === "SMS"}>
+            SMS CAMPAIGNS
+          </CloudItem>
+          <CloudItem
+            highLighted={words[highLighted] === "SL"}
+            fontSize='24px'
+            ml='8px'
+          >
+            short/long form
+          </CloudItem>
+        </Box>
+      </CloudWrapper>
+    </>
   );
 }
 
