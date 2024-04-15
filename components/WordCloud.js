@@ -17,26 +17,18 @@ export default function WordCloud() {
     <CloudWrapper>
       {/* TOP PART */}
       <HStack justify='center'>
-        <CloudItem color={words[highLighted] === "BC" ? "fuchsia" : "black"}>
-          B2C
-        </CloudItem>
-        <CloudItem
-          color={words[highLighted] === "LP" ? "fuchsia" : "black"}
-          fontSize='24px'
-        >
+        <CloudItem highLighted={words[highLighted] === "BC"}>B2C</CloudItem>
+        <CloudItem highLighted={words[highLighted] === "LP"} fontSize='24px'>
           LANDING PAGES
         </CloudItem>
-        <CloudItem
-          color={words[highLighted] === "PD" ? "fuchsia" : "black"}
-          textAlign='left'
-        >
+        <CloudItem highLighted={words[highLighted] === "PD"} textAlign='left'>
           PRODUCT DESCRIPTION
         </CloudItem>
       </HStack>
       {/* MIDDLE PART */}
       <HStack mt='56px' justify='center'>
         <CloudItem
-          color={words[highLighted] === "SOC" ? "fuchsia" : "black"}
+          highLighted={words[highLighted] === "SOC"}
           transform='rotate(270deg) translate(16px, 24px)'
           maxW='180px'
           lineHeight='48px'
@@ -46,7 +38,7 @@ export default function WordCloud() {
           SOCIAL MEDIA ADS
         </CloudItem>
         <CloudItem
-          color={words[highLighted] === "EN" ? "fuchsia" : "black"}
+          highLighted={words[highLighted] === "EN"}
           textAlign='left'
           alignSelf='start'
           fontSize='64px'
@@ -56,27 +48,21 @@ export default function WordCloud() {
       </HStack>
       {/* BOTTOM PART */}
       <HStack mt='-95px' justify='center'>
-        <CloudItem
-          color={words[highLighted] === "DR" ? "fuchsia" : "black"}
-          fontSize='24px'
-        >
+        <CloudItem highLighted={words[highLighted] === "DR"} fontSize='24px'>
           direct-response
         </CloudItem>
-        <CloudItem
-          color={words[highLighted] === "BP" ? "fuchsia" : "black"}
-          textAlign='left'
-        >
+        <CloudItem highLighted={words[highLighted] === "BP"} textAlign='left'>
           BLOG POSTS
         </CloudItem>
       </HStack>
       <Box mt='16px' textAlign='left' transform='translateX(72px)'>
-        <CloudItem color={words[highLighted] === "SMS" ? "fuchsia" : "black"}>
+        <CloudItem highLighted={words[highLighted] === "SMS"}>
           SMS CAMPAIGNS
         </CloudItem>
         <CloudItem
+          highLighted={words[highLighted] === "SL"}
           fontSize='24px'
           ml='8px'
-          color={words[highLighted] === "SL" ? "fuchsia" : "black"}
         >
           short/long form
         </CloudItem>
@@ -92,7 +78,9 @@ function CloudItem(props) {
       flexShrink='0'
       display='inline'
       w='fit-content'
-      transition='color .4s'
+      transition='all .4s'
+      color={props.highLighted ? "magenta" : "black"}
+      filter={props.highLighted ? "drop-shadow(1px 2px 8px gold)" : ""}
       {...props}
     >
       {props.children}
