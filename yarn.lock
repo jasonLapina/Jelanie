@@ -1008,6 +1008,11 @@
   resolved "https://registry.npmjs.org/@fontsource/chilanka/-/chilanka-5.0.19.tgz"
   integrity sha512-iidib3eUttJluOTPnNGMmwkj6ONvt5cQmTvO/+FaC5eVe9vDIV4wbiyb7v69ewvCIpWNGmEeKJV2Nmtu/rizyg==
 
+"@fontsource/special-elite@^5.0.8":
+  version "5.0.8"
+  resolved "https://registry.npmjs.org/@fontsource/special-elite/-/special-elite-5.0.8.tgz"
+  integrity sha512-TQjGCMTzqWv7kAjW/Doz0x1LAFwzWKQs+uDW9T5i8kSBGeaxuJ0Qg1wYMlnGrvu+KH79T7E7B3Oz6/xjf7CBSw==
+
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.11.14.tgz"
