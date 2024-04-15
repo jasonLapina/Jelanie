@@ -1,8 +1,8 @@
-import { HStack, Text } from "@chakra-ui/react";
+import { Box, HStack, Text } from "@chakra-ui/react";
 import CloudWrapper from "./CloudWrapper";
 import { useEffect, useState } from "react";
 
-const words = ["BC", "LP", "PD", "SOC", "EN", "DR", "BP"];
+const words = ["BC", "LP", "PD", "SOC", "EN", "DR", "BP", "SMS", "SL"];
 
 export default function WordCloud() {
   const [highLighted, setHighLighted] = useState(0);
@@ -69,6 +69,18 @@ export default function WordCloud() {
           BLOG POSTS
         </CloudItem>
       </HStack>
+      <Box mt='16px' textAlign='left' transform='translateX(72px)'>
+        <CloudItem color={words[highLighted] === "SMS" ? "fuchsia" : "black"}>
+          SMS CAMPAIGNS
+        </CloudItem>
+        <CloudItem
+          fontSize='24px'
+          ml='8px'
+          color={words[highLighted] === "SL" ? "fuchsia" : "black"}
+        >
+          short/long form
+        </CloudItem>
+      </Box>
     </CloudWrapper>
   );
 }
