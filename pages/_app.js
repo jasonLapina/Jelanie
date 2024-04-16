@@ -3,6 +3,7 @@ import { Box, ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 
 import "@fontsource/chilanka";
+import "@fontsource/special-elite";
 
 const theme = extendTheme({
   fonts: {

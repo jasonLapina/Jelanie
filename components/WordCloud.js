@@ -1,7 +1,7 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
 import CloudWrapper from "./CloudWrapper";
 import { useEffect, useState } from "react";
-import "@fontsource/special-elite";
+
 const words = ["BC", "LP", "PD", "SOC", "EN", "DR", "BP", "SMS", "SL"];
 
 export default function WordCloud() {

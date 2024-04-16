@@ -1,5 +1,6 @@
 import { Box, Heading } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
+import WorkSamples from "./WorkSamples";
 function Works() {
   return (
     <Box>
@@ -11,9 +12,11 @@ function Works() {
         }}
         color='transparent'
       >
-        Works
+        some brands I&apos;ve written for
       </Heading>
-      <SectionLayout></SectionLayout>
+      <SectionLayout>
+        <WorkSamples />
+      </SectionLayout>
     </Box>
   );
 }
