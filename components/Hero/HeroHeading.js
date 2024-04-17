@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/react";
 
-const heroHeading = ["Hi", "there", "it's", "Jel"];
+const heroHeading = ["Hi", "there,", "it's", "Jel"];
 export default function HeroHeading() {
   const [headingIdx, setHeadingIdx] = useState(0);
   useEffect(() => {

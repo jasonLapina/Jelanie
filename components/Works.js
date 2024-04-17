@@ -1,15 +1,17 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Center, Heading } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import WorkSamples from "./WorkSamples";
 function Works() {
   return (
-    <Box>
-      <Heading textAlign='center' fontSize='12vh'>
-        some brands I&apos;ve written for
+    <Box mt='-120px'>
+      <Heading textAlign='center' fontSize='80px' py='80px'>
+        industries I&apos;ve written for
       </Heading>
-      <SectionLayout>
-        <WorkSamples />
-      </SectionLayout>
+      <Center bgColor='rgb(85, 107, 47,.8)'>
+        <SectionLayout>
+          <WorkSamples />
+        </SectionLayout>
+      </Center>
     </Box>
   );
 }

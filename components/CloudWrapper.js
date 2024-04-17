@@ -10,7 +10,7 @@ export default function CloudWrapper({ children, extendedProps }) {
       py='80px'
       px='40px'
       fontSize='40px'
-      fontFamily='Chilanka'
+      fontFamily='Balsamiq Sans'
       textAlign='center'
       fontWeight='semibold'
       pos='relative'
