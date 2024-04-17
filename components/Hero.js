@@ -10,6 +10,8 @@ import {
 import Marquee from "react-fast-marquee";
 import MyBtn from "./shared/MyBtn";
 
+import "@fontsource/rampart-one";
+
 const dummyClients = Array.from({ length: 10 });
 function Hero() {
   return (
@@ -34,7 +36,8 @@ function Hero() {
             style={{
               WebkitTextStroke: ".05vw black",
             }}
-            color='white'
+            // color='white'
+            fontFamily='Rampart One'
           >
             Hi there, it&apos;s Jel.
           </Heading>

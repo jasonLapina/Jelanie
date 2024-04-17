@@ -1008,6 +1008,16 @@
   resolved "https://registry.npmjs.org/@fontsource/chilanka/-/chilanka-5.0.19.tgz"
   integrity sha512-iidib3eUttJluOTPnNGMmwkj6ONvt5cQmTvO/+FaC5eVe9vDIV4wbiyb7v69ewvCIpWNGmEeKJV2Nmtu/rizyg==
 
+"@fontsource/lilita-one@^5.0.19":
+  version "5.0.19"
+  resolved "https://registry.npmjs.org/@fontsource/lilita-one/-/lilita-one-5.0.19.tgz"
+  integrity sha512-w+FwMquAD5Vry5cM1Ky429fyOrH8jQ7vwI6ApTnrv2xd+Ip5dkDHF2F6q3Srwz6nL5YL9PNB/gbe42QSgzbhww==
+
+"@fontsource/rampart-one@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.npmjs.org/@fontsource/rampart-one/-/rampart-one-5.0.18.tgz"
+  integrity sha512-lcR1klErXuFXGxaInQ/9Ka7Yo7AtpGrNISwXlX+Et0rv5kC1IBwLRM5hdp1TvjtRDEn6Ex5O/sAX2rZSjWuEvw==
+
 "@fontsource/special-elite@^5.0.8":
   version "5.0.8"
   resolved "https://registry.npmjs.org/@fontsource/special-elite/-/special-elite-5.0.8.tgz"

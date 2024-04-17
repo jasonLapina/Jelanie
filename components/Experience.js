@@ -2,10 +2,11 @@ import { Box, Grid, Text } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import MyBtn from "./shared/MyBtn";
 import WordCloud from "./WordCloud";
+import "@fontsource/lilita-one";
 
 function Experience() {
   return (
-    <Box mb='120px' bgColor='rgba(255,255,0,.75)'>
+    <Box mb='120px' bgColor='rgb(210, 105, 30,.8)'>
       <SectionLayout>
         <Grid gridTemplateColumns='1fr 1fr'>
           <Box />
@@ -15,6 +16,7 @@ function Experience() {
               fontWeight='bold'
               textTransform='uppercase'
               fontSize='8vh'
+              fontFamily="'Lilita One'"
             >
               <Box
                 as='span'
@@ -35,7 +37,7 @@ function Experience() {
               <Box
                 as='span'
                 style={{
-                  WebkitTextStroke: ".1vw red",
+                  WebkitTextStroke: ".1vw white",
                 }}
                 color='transparent'
               >

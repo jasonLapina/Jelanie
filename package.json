@@ -13,6 +13,8 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@fontsource/chilanka": "^5.0.19",
+    "@fontsource/lilita-one": "^5.0.19",
+    "@fontsource/rampart-one": "^5.0.18",
     "@fontsource/special-elite": "^5.0.8",
     "framer-motion": "^11.0.14",
     "next": "14.1.3",

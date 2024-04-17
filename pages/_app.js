@@ -18,9 +18,14 @@ function MyApp({ Component, pageProps }) {
         bgAttachment='fixed'
         bgSize='cover'
         bgImage='url(https://static.vecteezy.com/system/resources/previews/023/509/279/original/fun-colorful-doodle-pattern-creative-minimalist-style-art-abstract-background-with-bright-cute-elements-and-figures-simple-childish-scribble-backdrop-multi-colored-swirls-circles-lines-vector.jpg)'
-      >
-        <Component {...pageProps} />
-      </Box>
+        bgBlendMode='overlay'
+        pos='absolute'
+        w='100%'
+        h='100%'
+        zIndex='-1'
+        filter='blur(15px)'
+      />
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
