@@ -4,14 +4,18 @@ import { extendTheme } from "@chakra-ui/react";
 
 import "@fontsource/chilanka";
 import "@fontsource/special-elite";
+import "@fontsource/balsamiq-sans/400.css";
+import "@fontsource/balsamiq-sans/700.css";
 
 const theme = extendTheme({
   fonts: {
     heading: `'Chilanka', cursive`,
+    body: `'Balsamiq Sans', sans-serif`,
   },
 });
 
 function MyApp({ Component, pageProps }) {
+  console.log("render");
   return (
     <ChakraProvider theme={theme}>
       <Box
@@ -23,7 +27,7 @@ function MyApp({ Component, pageProps }) {
         w='100%'
         h='100%'
         zIndex='-1'
-        filter='blur(15px)'
+        filter='blur(20px)'
       />
       <Component {...pageProps} />
     </ChakraProvider>

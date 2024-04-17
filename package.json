@@ -12,6 +12,7 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
+    "@fontsource/balsamiq-sans": "^5.0.19",
     "@fontsource/chilanka": "^5.0.19",
     "@fontsource/lilita-one": "^5.0.19",
     "@fontsource/rampart-one": "^5.0.18",

@@ -8,11 +8,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Marquee from "react-fast-marquee";
-import MyBtn from "./shared/MyBtn";
+import MyBtn from "../shared/MyBtn";
 
 import "@fontsource/rampart-one";
 
+import HeroHeading from "./HeroHeading";
+
 const dummyClients = Array.from({ length: 10 });
+
 function Hero() {
   return (
     <Grid
@@ -36,20 +39,15 @@ function Hero() {
             style={{
               WebkitTextStroke: ".05vw black",
             }}
-            // color='white'
             fontFamily='Rampart One'
           >
-            Hi there, it&apos;s Jel.
+            <HeroHeading />
           </Heading>
-          <Text
-            textShadow='1px 1px white'
-            fontWeight='semibold'
-            fontSize='24px'
-          >
+          <Text fontWeight='semibold' fontSize='24px'>
             I&apos;m here to put words to work for your business.
           </Text>
           <HStack gap='32px'>
-            <MyBtn border='solid 2px orangered'>VIEW MY PORTFOLIO</MyBtn>
+            <MyBtn>VIEW MY PORTFOLIO</MyBtn>
             {/* <MyBtn border='solid 2px orangered'>CTA2</MyBtn> */}
           </HStack>
         </VStack>

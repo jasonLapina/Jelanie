@@ -6,12 +6,12 @@ function MyBtn(props) {
       px='60px'
       py='40px'
       fontSize='24px'
-      boxShadow='4px 6px rgba(0,0,0,.7)'
+      boxShadow='6px 8px rgba(0,0,0,.7)'
       border='solid 2px black'
       _hover={{
         boxShadow: "2px 3px rgba(0,0,0,7)",
         transform: "translate(2px, 2px)",
-        color: "red",
+        color: "orangered",
       }}
       {...props}
     />

@@ -96,7 +96,7 @@ function CloudItem(props) {
       display='inline'
       w='fit-content'
       transition='all .4s'
-      color={props.highLighted ? "magenta" : "black"}
+      color={props.highLighted ? "white" : "black"}
       filter={props.highLighted ? "drop-shadow(1px 2px 8px gold)" : ""}
       {...props}
     >
