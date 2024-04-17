@@ -4,14 +4,7 @@ import WorkSamples from "./WorkSamples";
 function Works() {
   return (
     <Box>
-      <Heading
-        textAlign='center'
-        fontSize='12vh'
-        style={{
-          WebkitTextStroke: ".1vw black",
-        }}
-        color='transparent'
-      >
+      <Heading textAlign='center' fontSize='12vh'>
         some brands I&apos;ve written for
       </Heading>
       <SectionLayout>

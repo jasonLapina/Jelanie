@@ -39,7 +39,6 @@ function Hero() {
             style={{
               WebkitTextStroke: ".05vw black",
             }}
-            fontFamily='Rampart One'
           >
             <HeroHeading />
           </Heading>

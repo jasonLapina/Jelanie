@@ -9,7 +9,7 @@ import "@fontsource/balsamiq-sans/700.css";
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Chilanka', cursive`,
+    heading: `'Rampart One', cursive`,
     body: `'Balsamiq Sans', sans-serif`,
   },
 });
