@@ -49,12 +49,8 @@ export default function WorkSamples() {
   }, [hovered]);
 
   return (
-    <Grid
-      justifyContent='center'
-      justifyItems='center'
-      gridTemplateColumns='1fr 2fr'
-    >
-      <Box w='100%' h='650px' overflow='hidden'>
+    <Grid gridTemplateColumns='1fr 1fr' gap='80px'>
+      <Box h='650px' overflow='hidden'>
         {samples[hovered]?.images[0] ? (
           <motion.img
             key={hovered}
@@ -62,9 +58,12 @@ export default function WorkSamples() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.4 }}
             src={[samples[hovered].images[0]]}
+            style={{
+              width: "480px",
+            }}
           />
         ) : (
-          <Box w='100%' h='100%' />
+          <Box w='480px' h='100%' />
         )}
       </Box>
       <VStack align='normal'>
@@ -80,6 +79,7 @@ export default function WorkSamples() {
             cursor='pointer'
             role='group'
             overflow='hidden'
+            textShadow='2px 2px white'
           >
             <Text
               transition='all .4s'
