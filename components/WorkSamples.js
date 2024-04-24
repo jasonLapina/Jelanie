@@ -39,6 +39,12 @@ const samples = [
       "https://assets-global.website-files.com/65667eee3e4d8058ee5a095b/657148b2abc125e575a271c9_28434712_190905788182108_7835183601141415936_n.jpg",
     ],
   },
+  {
+    heading: "RECREATIONAL",
+    images: [
+      "https://assets-global.website-files.com/65667eee3e4d8058ee5a095b/657148b2abc125e575a271c9_28434712_190905788182108_7835183601141415936_n.jpg",
+    ],
+  },
 ];
 
 export default function WorkSamples() {
