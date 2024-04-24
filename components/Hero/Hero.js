@@ -67,7 +67,7 @@ function Hero() {
           transform: "rotate(285deg) scaleX(1.2)",
           overflow: "hidden",
         }}
-        speed={125}
+        speed={150}
       >
         {featuredImages.map((pic) => (
           <Box
