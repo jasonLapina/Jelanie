@@ -4,6 +4,7 @@ import {
   Grid,
   HStack,
   Heading,
+  Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -14,7 +15,15 @@ import "@fontsource/rampart-one";
 
 import HeroHeading from "./HeroHeading";
 
-const dummyClients = Array.from({ length: 10 });
+const featuredImages = [
+  "5minSkin.png",
+  "airstyle.jpg",
+  "bezeli_march.jpg",
+  "bezeli.jpg",
+  "bonsai.jpg",
+  "brute_force.png",
+  "buzzbud.jpg",
+];
 
 function Hero() {
   return (
@@ -60,16 +69,18 @@ function Hero() {
         }}
         speed={125}
       >
-        {dummyClients.map((_, i) => (
+        {featuredImages.map((pic) => (
           <Box
-            key={i}
+            key={pic}
             mx='80px'
             my='16px'
-            bgColor='red'
-            h='400px'
+            h='420px'
             w='320px'
             borderRadius='15px'
-          />
+            overflow='hidden'
+          >
+            <Image alt={pic} src={`/assets/work_samples/${pic}`} />
+          </Box>
         ))}
       </Marquee>
     </Grid>
