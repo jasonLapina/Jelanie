@@ -1,6 +1,7 @@
 import { Box, Center, Heading, VStack } from "@chakra-ui/react";
 import SectionLayout from "../shared/SectionLayout";
 import WordMarquee from "./WordMarquee";
+import WorksMasonry from "./WorksMasonry";
 
 const industries = [
   "Fashion & Clothing",
@@ -42,6 +43,7 @@ function Works() {
         <WordMarquee words={industries} />
         <WordMarquee words={objectives} direction='left' />
       </VStack>
+      <WorksMasonry />
     </Box>
   );
 }
