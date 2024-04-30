@@ -55,6 +55,7 @@ function MasonryModal({ src, height }) {
             opacity: 1,
           }}
           fontWeight='bold'
+          textShadow='2px 2px white'
         >
           Click to view
         </Center>
