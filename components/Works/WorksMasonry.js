@@ -40,10 +40,7 @@ export default function WorksMasonry() {
       src: "cru.png",
       height: "210",
     },
-    {
-      src: "realtakai.gif",
-      height: "400",
-    },
+
     {
       src: "bezeli.jpg",
       height: "280",
