@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Grid,
   HStack,
   Heading,
@@ -14,7 +13,6 @@ import MyBtn from "../shared/MyBtn";
 import "@fontsource/rampart-one";
 
 import HeroHeading from "./HeroHeading";
-
 const featuredImages = [
   "5minSkin.png",
   "airstyle.jpg",
@@ -24,7 +22,6 @@ const featuredImages = [
   "brute_force.png",
   "buzzbud.jpg",
 ];
-
 function Hero() {
   return (
     <Grid
@@ -56,7 +53,6 @@ function Hero() {
           </Text>
           <HStack gap='32px'>
             <MyBtn>VIEW MY PORTFOLIO</MyBtn>
-            {/* <MyBtn border='solid 2px orangered'>CTA2</MyBtn> */}
           </HStack>
         </VStack>
       </Box>
