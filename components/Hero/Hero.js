@@ -16,13 +16,13 @@ import { motion } from "framer-motion";
 import HeroHeading from "./HeroHeading";
 
 const featuredImages = [
-  "5minSkin.png",
-  "airstyle.jpg",
-  "bezeli_march.jpg",
-  "bezeli.jpg",
-  "bonsai.jpg",
-  "brute_force.png",
   "buzzbud.jpg",
+  "bezeli_march.jpg",
+  "sugar_baby.jpg",
+  "realtakai_feb.jpg",
+  "bezeli.jpg",
+  "sleep_by_santi.jpg",
+  "homi2.jpg",
 ];
 function Hero() {
   return (
