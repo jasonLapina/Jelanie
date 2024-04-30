@@ -37,7 +37,11 @@ function Works() {
   return (
     <Box mt='-120px'>
       <Heading textAlign='center' fontSize='80px' py='80px'>
-        industries I&apos;ve written for
+        THE PROOF IS IN THE{" "}
+        <Box as='span' textDecor='line-through'>
+          PUDDING
+        </Box>{" "}
+        PORTFOLIO
       </Heading>
       <VStack bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
         <WordMarquee words={industries} />

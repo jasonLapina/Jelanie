@@ -20,7 +20,7 @@ function MasonryModal({ src, height }) {
         bgSize='cover'
         bgPos='top'
         bgRepeat='no-repeat'
-        borderRadius='10px'
+        // borderRadius='10px'
         overflow='hidden'
         cursor='pointer'
         onClick={onOpen}
