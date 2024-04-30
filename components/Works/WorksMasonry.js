@@ -90,12 +90,12 @@ export default function WorksMasonry() {
     },
     {
       src: "realtakai_feb.jpg",
-      height: "130",
+      height: "350",
     },
 
     {
       src: "sleep_by_santi2.jpg",
-      height: "400",
+      height: "240",
     },
 
     {
