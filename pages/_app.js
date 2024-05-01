@@ -6,6 +6,9 @@ import "@fontsource/chilanka";
 import "@fontsource/special-elite";
 import "@fontsource/balsamiq-sans/400.css";
 import "@fontsource/balsamiq-sans/700.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const theme = extendTheme({
   fonts: {
@@ -15,7 +18,10 @@ const theme = extendTheme({
 });
 
 function MyApp({ Component, pageProps }) {
-  console.log("render");
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <ChakraProvider theme={theme}>
       <Box
