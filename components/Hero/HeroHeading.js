@@ -1,19 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import { Box } from "@chakra-ui/react";
 
 const heroHeading = ["Hi", "there,", "it's", "Jel"];
+
 export default function HeroHeading() {
   const [headingIdx, setHeadingIdx] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHeadingIdx((prev) => (prev >= heroHeading.length - 1 ? 0 : prev + 1));
-    }, 800);
-    return () => clearInterval(interval);
+
+  const intervalFunction = useCallback(() => {
+    setHeadingIdx((prev) => (prev >= heroHeading.length - 1 ? 0 : prev + 1));
   }, []);
+
+  useEffect(() => {
+    const interval = setInterval(intervalFunction, 800);
+    return () => clearInterval(interval);
+  }, [intervalFunction]);
+
+  const memoizedHeroHeading = useMemo(() => heroHeading, []);
 
   return (
     <>
-      {heroHeading.map((w, i) => (
+      {memoizedHeroHeading.map((w, i) => (
         <Box
           key={w}
           as='span'
