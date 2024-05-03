@@ -5,16 +5,12 @@ import {
   useDisclosure,
   Box,
   Image,
-  Skeleton,
-  Text,
   Center,
 } from "@chakra-ui/react";
-import { useState } from "react";
 
 function MasonryModal({ src, height }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
-  const [loaded, setLoaded] = useState(false);
   return (
     <>
       <Box
@@ -26,17 +22,12 @@ function MasonryModal({ src, height }) {
         onClick={onOpen}
         pos='relative'
         role='group'
-        data-aos='fade-up'
       >
-        <Skeleton isLoaded={loaded}>
-          <Image
-            alt='work sample'
-            src={`/assets/work_samples/${src}`}
-            onLoad={() => setLoaded(true)}
-            transition='all .4s'
-            loading='lazy'
-          />
-        </Skeleton>
+        <Image
+          alt='work sample'
+          src={`/assets/work_samples/${src}`}
+          transition='all .4s'
+        />
 
         <Center
           pos='absolute'
@@ -64,14 +55,7 @@ function MasonryModal({ src, height }) {
       <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false}>
         <ModalOverlay />
         <ModalContent>
-          {/* <ModalHeader>Modal Title</ModalHeader> */}
           <Image alt='work sample' src={`/assets/work_samples/${src}`} />
-          {/* <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
-              Close
-            </Button>
-            <Button variant='ghost'>Secondary Action</Button>
-          </ModalFooter> */}
         </ModalContent>
       </Modal>
     </>
