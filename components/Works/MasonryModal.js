@@ -22,6 +22,7 @@ function MasonryModal({ src, height }) {
         onClick={onOpen}
         pos='relative'
         role='group'
+        data-aos='fade-up'
       >
         <Image
           alt='work sample'
