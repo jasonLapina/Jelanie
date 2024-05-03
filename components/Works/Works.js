@@ -36,7 +36,11 @@ const objectives = [
 function Works() {
   return (
     <Box mt='-120px'>
-      <Heading textAlign='center' fontSize='80px' py='80px'>
+      <Heading
+        textAlign='center'
+        fontSize={{ md: "80px", base: "32px" }}
+        py='80px'
+      >
         THE PROOF IS IN THE{" "}
         <Box as='span' textDecor='line-through'>
           PUDDING
