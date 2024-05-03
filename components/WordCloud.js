@@ -56,7 +56,7 @@ export default function WordCloud() {
             highLighted={words[highLighted] === "EN"}
             textAlign='left'
             alignSelf='start'
-            fontSize='64px'
+            fontSize={{ lg: "64px", md: "60px" }}
             fontFamily='Special Elite'
           >
             EMAIL NEWSLETTER

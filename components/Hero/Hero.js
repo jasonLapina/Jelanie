@@ -50,7 +50,7 @@ function Hero() {
         >
           <VStack align='normal' gap='24px'>
             <Heading
-              fontSize={{ md: "120px", base: "40px" }}
+              fontSize={{ md: "6.5vw", base: "40px" }}
               style={{
                 WebkitTextStroke: ".05vw black",
               }}
