@@ -1,4 +1,4 @@
-import { Box, Grid, Text } from "@chakra-ui/react";
+import { Box, Grid, HStack, Text } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import MyBtn from "./shared/MyBtn";
 import WordCloud from "./WordCloud";
@@ -8,20 +8,20 @@ function Experience() {
   return (
     <Box mb='120px' bgColor='rgb(210, 105, 30,.8)'>
       <SectionLayout>
-        <Grid gridTemplateColumns='1fr 1fr'>
+        <Grid gridTemplateColumns={{ md: "1fr 1fr", base: "1fr" }}>
           <Box />
           <Box>
             <Text
               pos='relative'
               fontWeight='bold'
               textTransform='uppercase'
-              fontSize='8vh'
+              fontSize={{ md: "8vh", base: "40px" }}
               fontFamily="'Lilita One'"
             >
               <Box
                 as='span'
-                top='-8px'
-                left='-54px'
+                top={{ md: "-8px", base: "-32px" }}
+                left={{ md: "-54px", base: "-8px" }}
                 transform='rotate(-9deg)'
                 bgColor='gold'
                 pos='absolute'
@@ -56,7 +56,9 @@ function Experience() {
               paying customers and brand loyalists by writing targeted,
               conversion-focused, and community-driven copy.
             </Text>
-            <MyBtn>View full job history</MyBtn>
+            <HStack justify={{ base: "center", md: "start" }}>
+              <MyBtn>View full job history</MyBtn>
+            </HStack>
           </Box>
         </Grid>
       </SectionLayout>
