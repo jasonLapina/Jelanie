@@ -5,7 +5,7 @@ function MyBtn(props) {
       borderRadius='full'
       px='60px'
       py='40px'
-      fontSize='24px'
+      fontSize={{ md: "24px", base: "18px" }}
       boxShadow='6px 8px rgba(0,0,0,.7)'
       border='solid 2px black'
       _hover={{

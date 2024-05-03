@@ -7,23 +7,15 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Marquee from "react-fast-marquee";
+
 import MyBtn from "../shared/MyBtn";
 
 import "@fontsource/rampart-one";
 import { motion } from "framer-motion";
 
 import HeroHeading from "./HeroHeading";
+import HeroMarquee from "./HeroMarquee";
 
-const featuredImages = [
-  "buzzbud.jpg",
-  "bezeli_march.jpg",
-  "sugar_baby.jpg",
-  "realtakai_feb.jpg",
-  "bezeli.jpg",
-  "sleep_by_santi.jpg",
-  "homi2.jpg",
-];
 function Hero() {
   return (
     <motion.div
@@ -42,10 +34,11 @@ function Hero() {
     >
       <Grid
         alignItems='center'
-        px='16px'
-        gridTemplateColumns='10fr 1fr'
+        px={{ md: "16px", base: "9px" }}
+        gridTemplateColumns={{ base: "1fr", md: "10fr 1fr" }}
         overflow='hidden'
         h='90vh'
+        pos='relative'
       >
         <Box
           bgSize='cover'
@@ -57,7 +50,7 @@ function Hero() {
         >
           <VStack align='normal' gap='24px'>
             <Heading
-              fontSize='120px'
+              fontSize={{ md: "120px", base: "40px" }}
               style={{
                 WebkitTextStroke: ".05vw black",
               }}
@@ -67,34 +60,12 @@ function Hero() {
             <Text fontWeight='semibold' fontSize='24px'>
               I&apos;m here to put words to work for your business.
             </Text>
-            <HStack gap='32px'>
+            <HStack gap='32px' justify={{ base: "center", md: "start" }}>
               <MyBtn>VIEW MY PORTFOLIO</MyBtn>
             </HStack>
           </VStack>
         </Box>
-
-        <Marquee
-          direction='up'
-          style={{
-            transform: "rotate(285deg) scaleX(1.2)",
-            overflow: "hidden",
-          }}
-          speed={150}
-        >
-          {featuredImages.map((pic) => (
-            <Box
-              key={pic}
-              mx='80px'
-              my='16px'
-              h='420px'
-              w='320px'
-              borderRadius='15px'
-              overflow='hidden'
-            >
-              <Image alt={pic} src={`/assets/work_samples/${pic}`} />
-            </Box>
-          ))}
-        </Marquee>
+        <HeroMarquee />
       </Grid>
     </motion.div>
   );

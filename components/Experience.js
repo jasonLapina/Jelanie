@@ -60,7 +60,7 @@ function Experience() {
           </Box>
         </Grid>
       </SectionLayout>
-      <WordCloud />
+      {/* <WordCloud /> */}
     </Box>
   );
 }
