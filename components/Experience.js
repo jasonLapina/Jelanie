@@ -1,10 +1,11 @@
-import { Box, Grid, HStack, Text } from "@chakra-ui/react";
+import { Box, Grid, HStack, Text, useMediaQuery } from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import MyBtn from "./shared/MyBtn";
 import WordCloud from "./WordCloud";
 import "@fontsource/lilita-one";
 
 function Experience() {
+  const [isMedium] = useMediaQuery("(min-width: 768px)");
   return (
     <Box mb='120px' bgColor='rgb(210, 105, 30,.8)'>
       <SectionLayout>
@@ -62,7 +63,7 @@ function Experience() {
           </Box>
         </Grid>
       </SectionLayout>
-      {/* <WordCloud /> */}
+      {isMedium && <WordCloud />}
     </Box>
   );
 }
