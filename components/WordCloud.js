@@ -1,18 +1,23 @@
 import { Box, HStack, Text } from "@chakra-ui/react";
 import CloudWrapper from "./CloudWrapper";
-import { useEffect, useState } from "react";
-
-const words = ["BC", "LP", "PD", "SOC", "EN", "DR", "BP", "SMS", "SL"];
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 export default function WordCloud() {
   const [highLighted, setHighLighted] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHighLighted((prev) => (prev >= words.length - 1 ? 0 : prev + 1));
-    }, 750);
 
-    return () => clearInterval(interval);
+  const intervalFunc = useCallback(() => {
+    setHighLighted((prev) => (prev >= words.length - 1 ? 0 : prev + 1));
   }, []);
+  useEffect(() => {
+    const interval = setInterval(intervalFunc, 750);
+    return () => clearInterval(interval);
+  }, [intervalFunc]);
+
+  const words = useMemo(
+    () => ["BC", "LP", "PD", "SOC", "EN", "DR", "BP", "SMS", "SL"],
+    []
+  );
+
   return (
     <>
       <Text
