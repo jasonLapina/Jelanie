@@ -22,7 +22,7 @@ function MasonryModal({ src, height }) {
         onClick={onOpen}
         pos='relative'
         role='group'
-        // data-aos='fade-up'
+        data-aos='fade-up'
         border='solid 5px orangered'
         borderRadius='15px'
       >
