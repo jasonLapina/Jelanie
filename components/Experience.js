@@ -1,4 +1,11 @@
-import { Box, Grid, HStack, Text, useMediaQuery } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  HStack,
+  Image,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 import SectionLayout from "./shared/SectionLayout";
 import MyBtn from "./shared/MyBtn";
 import WordCloud from "./WordCloud";
@@ -9,9 +16,18 @@ function Experience() {
   return (
     <Box mb='120px' bgColor='rgb(210, 105, 30,.8)'>
       <SectionLayout>
-        <Grid gridTemplateColumns={{ md: "1fr 1fr", base: "1fr" }}>
-          <Box />
-          <Box>
+        <Grid gridTemplateColumns={{ md: "1fr 1.5fr", base: "1fr" }} gap='40px'>
+          <Image
+            bgColor='rgba(255,255,255,.2)'
+            boxShadow='0 4px 30px rgba(0, 0, 0, 0.1)'
+            backdropFilter='blur(5px)'
+            border='solid 1px rgba(255,255,255,.3)'
+            borderRadius='full'
+            src='/assets/jelanie.png'
+            alt='Jelanie Gapas'
+            justifySelf='end'
+          />
+          <Box alignSelf='center'>
             <Text
               pos='relative'
               fontWeight='bold'
