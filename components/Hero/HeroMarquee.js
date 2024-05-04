@@ -17,7 +17,7 @@ export default function HeroMarquee() {
     <Marquee
       direction={isMedium ? "up" : "right"}
       style={{
-        transform: isMedium ? "rotate(285deg) scaleX(1.2)" : "",
+        transform: isMedium ? "rotate(285deg) scale(2)" : "scale(1)",
         overflow: "hidden",
       }}
       speed={150}
