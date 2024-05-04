@@ -15,12 +15,10 @@ export default function HeroMarquee() {
   const [isMedium] = useMediaQuery("(min-width: 768px)");
   return (
     <Marquee
-      direction='up'
+      direction={isMedium ? "up" : "right"}
       style={{
-        transform: "rotate(285deg) scaleX(1.2)",
+        transform: isMedium ? "rotate(285deg) scaleX(1.2)" : "",
         overflow: "hidden",
-        position: isMedium ? "" : "absolute",
-        zIndex: isMedium ? 1 : -1,
       }}
       speed={150}
     >
@@ -31,7 +29,7 @@ export default function HeroMarquee() {
           my='16px'
           h='420px'
           w='320px'
-          borderRadius='15px'
+          borderRadius={{ md: "15px", base: "0" }}
           overflow='hidden'
         >
           <Image alt={pic} src={`/assets/work_samples/${pic}`} />

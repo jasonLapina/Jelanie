@@ -34,11 +34,12 @@ function Hero() {
     >
       <Grid
         alignItems='center'
-        px={{ md: "16px", base: "9px" }}
+        // px={{ md: "16px", base: "9px" }}
         gridTemplateColumns={{ base: "1fr", md: "10fr 1fr" }}
         overflow='hidden'
         h='90vh'
         pos='relative'
+        mb={{ base: "32px", md: "0" }}
       >
         <Box
           bgSize='cover'
@@ -47,6 +48,7 @@ function Hero() {
           maxW='768px'
           justifySelf='center'
           py='120px'
+          px={{ md: "16px", base: "8px" }}
         >
           <VStack align='normal' gap='24px'>
             <Heading
