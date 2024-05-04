@@ -116,7 +116,7 @@ export default function WorksMasonry() {
     []
   );
   return (
-    <Box my='120px' px='40px' style={{ columns: "400px auto" }}>
+    <Box my='80px' px='40px' style={{ columns: "400px auto" }}>
       {masonItems.map((m) => (
         <MasonryModal height={m.height} src={m.src} key={m.src} />
       ))}

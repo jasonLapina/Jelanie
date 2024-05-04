@@ -47,11 +47,13 @@ function Works() {
         </Box>{" "}
         PORTFOLIO
       </Heading>
-      <VStack bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
+      <Box bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
         <WordMarquee words={industries} />
-        <WordMarquee words={objectives} direction='left' />
-      </VStack>
+      </Box>
       <WorksMasonry />
+      <Box bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
+        <WordMarquee words={objectives} direction='left' />
+      </Box>
     </Box>
   );
 }
