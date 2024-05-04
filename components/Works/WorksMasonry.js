@@ -39,7 +39,7 @@ export default function WorksMasonry() {
         height: "240",
       },
       {
-        src: "cru.png",
+        src: "cru.webp",
         height: "210",
       },
 
