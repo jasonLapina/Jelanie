@@ -4,9 +4,9 @@ import {
   ModalContent,
   useDisclosure,
   Box,
-  Image,
   Center,
 } from "@chakra-ui/react";
+import Image from "next/image";
 
 function MasonryModal({ src, height }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -29,7 +29,12 @@ function MasonryModal({ src, height }) {
         <Image
           alt='work sample'
           src={`/assets/work_samples/${src}`}
-          transition='all .4s'
+          style={{
+            transition: "all .4s",
+          }}
+          objectFit='cover'
+          objectPosition='top'
+          fill={true}
         />
 
         <Center
