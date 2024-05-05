@@ -22,7 +22,7 @@ export default function WordCloud() {
     <>
       <Text
         textAlign='center'
-        fontFamily='Special Elite'
+        // fontFamily='Special Elite'
         fontSize='32px'
         fontWeight='semibold'
         mb='-24px'
@@ -57,7 +57,7 @@ export default function WordCloud() {
             textAlign='left'
             alignSelf='start'
             fontSize={{ lg: "64px", md: "60px" }}
-            fontFamily='Special Elite'
+            // fontFamily='Special Elite'
           >
             EMAIL NEWSLETTER
           </CloudItem>
