@@ -3,7 +3,7 @@ import MyBtn from "./shared/MyBtn";
 
 export default function Contact() {
   return (
-    <Box py='80px' mb='40px' bgColor='rgb(95, 133, 117,.8)'>
+    <Box py='80px' bgColor='rgb(95, 133, 117,.8)'>
       <Heading
         mb='32px'
         textAlign='center'
