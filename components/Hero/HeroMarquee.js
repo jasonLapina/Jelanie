@@ -1,5 +1,6 @@
-import { Box, Image, useMediaQuery } from "@chakra-ui/react";
+import { Box, useMediaQuery } from "@chakra-ui/react";
 import Marquee from "react-fast-marquee";
+import Image from "next/image";
 
 export default function HeroMarquee() {
   const featuredImages = [
@@ -32,7 +33,12 @@ export default function HeroMarquee() {
           borderRadius={{ md: "15px", base: "0" }}
           overflow='hidden'
         >
-          <Image alt={pic} src={`/assets/work_samples/${pic}`} />
+          <Image
+            width={420}
+            height={420}
+            alt={pic}
+            src={`/assets/work_samples/${pic}`}
+          />
         </Box>
       ))}
     </Marquee>
