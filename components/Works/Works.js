@@ -35,7 +35,7 @@ const objectives = [
 
 function Works() {
   return (
-    <Box mt='-120px'>
+    <Box mt='-120px' id='masonry'>
       <Heading
         textAlign='center'
         fontSize={{ md: "80px", base: "32px" }}

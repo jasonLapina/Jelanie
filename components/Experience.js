@@ -74,7 +74,13 @@ function Experience() {
               conversion-focused, and community-driven copy.
             </Text>
             <HStack justify={{ base: "center", md: "start" }}>
-              <MyBtn>View full job history</MyBtn>
+              <a
+                href='https://drive.google.com/file/d/1u8AOKucWWFFCBWdGEJiKV0WY1fqahWGL/view'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <MyBtn>View full job history</MyBtn>
+              </a>
             </HStack>
           </Box>
         </Grid>

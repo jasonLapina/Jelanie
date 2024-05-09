@@ -9,6 +9,7 @@ import "@fontsource/balsamiq-sans/700.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Head from "next/head";
 
 const theme = extendTheme({
   fonts: {
@@ -23,20 +24,26 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <ChakraProvider theme={theme}>
-      <Box
-        bgAttachment='fixed'
-        bgSize='cover'
-        bgImage='url(/assets/app-bg.webp)'
-        bgBlendMode='overlay'
-        pos='absolute'
-        w='100%'
-        h='100%'
-        zIndex='-1'
-        filter='blur(20px)'
-      />
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <Head>
+        <title>Jelanie Gapas</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <ChakraProvider theme={theme}>
+        <Box
+          bgAttachment='fixed'
+          bgSize='cover'
+          bgImage='url(/assets/app-bg.webp)'
+          bgBlendMode='overlay'
+          pos='absolute'
+          w='100%'
+          h='100%'
+          zIndex='-1'
+          filter='blur(20px)'
+        />
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
 

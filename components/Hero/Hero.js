@@ -63,7 +63,15 @@ function Hero() {
               I&apos;m here to put words to work for your business.
             </Text>
             <HStack gap='32px' justify={{ base: "center", md: "start" }}>
-              <MyBtn>VIEW MY PORTFOLIO</MyBtn>
+              <MyBtn
+                onClick={() => {
+                  document
+                    .getElementById("masonry")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                VIEW MY PORTFOLIO
+              </MyBtn>
             </HStack>
           </VStack>
         </Box>
