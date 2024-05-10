@@ -15,7 +15,6 @@ function MasonryModal({ src, height }) {
     <>
       <Box
         mb='8px'
-        key={height}
         h={height}
         overflow='hidden'
         cursor='pointer'
@@ -63,7 +62,11 @@ function MasonryModal({ src, height }) {
       <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false}>
         <ModalOverlay />
         <ModalContent>
-          <Image alt='work sample' src={`/assets/work_samples/${src}`} />
+          <Image
+            alt='work sample'
+            src={`/assets/work_samples/${src}`}
+            loading='lazy'
+          />
         </ModalContent>
       </Modal>
     </>
