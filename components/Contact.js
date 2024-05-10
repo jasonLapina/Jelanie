@@ -23,7 +23,7 @@ export default function Contact() {
       </Heading>
 
       <Center data-aos='fade-up'>
-        <a href='mailto:jgapaswork@gmail.com'>
+        <a href="mailto:jgapaswork@gmail.com?subject=Let's work together, Jel">
           <MyBtn>WORK WITH JEL</MyBtn>
         </a>
       </Center>
