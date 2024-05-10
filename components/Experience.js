@@ -79,7 +79,7 @@ function Experience() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <MyBtn>View full job history</MyBtn>
+                <MyBtn>VIEW FULL JOB HISTORY</MyBtn>
               </a>
             </HStack>
           </Box>
