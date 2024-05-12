@@ -75,7 +75,7 @@ function Experience() {
             </Text>
             <HStack justify={{ base: "center", md: "start" }}>
               <a
-                href='https://drive.google.com/file/d/1u8AOKucWWFFCBWdGEJiKV0WY1fqahWGL/view'
+                href='https://docs.google.com/document/d/1jakP4cPISVda8mDnOD2yu_U58zMzYd50/edit?usp=sharing&ouid=109884243385619527014&rtpof=true&sd=true'
                 target='_blank'
                 rel='noopener noreferrer'
               >
