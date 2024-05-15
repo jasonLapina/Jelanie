@@ -27,15 +27,12 @@ function MasonryModal({ src, height }) {
       >
         <Image
           alt='work sample'
-          src={`/assets/work_samples/${src}`}
-          style={{
-            transition: "all .4s",
-          }}
+          src={`https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/${src}`}
+          style={{ transition: "all .4s" }}
           objectFit='cover'
           objectPosition='top'
           fill={true}
         />
-
         <Center
           pos='absolute'
           top='50%'
@@ -50,9 +47,7 @@ function MasonryModal({ src, height }) {
           backdropFilter='blur(5px)'
           transition='all .2s'
           opacity={0}
-          _groupHover={{
-            opacity: 1,
-          }}
+          _groupHover={{ opacity: 1 }}
           fontWeight='bold'
           textShadow='2px 2px white'
         >
@@ -64,7 +59,7 @@ function MasonryModal({ src, height }) {
         <ModalContent>
           <Image
             alt='work sample'
-            src={`/assets/work_samples/${src}`}
+            src={`https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/${src}`}
             loading='lazy'
           />
         </ModalContent>

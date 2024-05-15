@@ -53,7 +53,7 @@ export default function WorksMasonry() {
       },
       {
         src: "lavish.jpg",
-        height: "170",
+        height: "600",
       },
       {
         src: "sleep_steady.png",
@@ -80,7 +80,7 @@ export default function WorksMasonry() {
       },
       {
         src: "lavish_pokemon.jpg",
-        height: "170",
+        height: "680",
       },
       {
         src: "paddie.png",
