@@ -6,13 +6,6 @@ import Works from "../components/Works/Works";
 import getSupa from "../utils/apiSupa";
 
 export default function Home() {
-  const [supa, setSupa] = useState(null);
-  useEffect(() => {
-    (async () => {
-      const res = await getSupa();
-      console.log(res);
-    })();
-  }, []);
   return (
     <>
       <Hero />
