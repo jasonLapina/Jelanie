@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Hero from "../components/Hero/Hero";
 import Works from "../components/Works/Works";
-import getSupa from "../utils/apiSupa";
+
+import Results from "../components/Results";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Hero />
       <Experience />
       <Works />
+      <Results />
       <Contact />
     </>
   );

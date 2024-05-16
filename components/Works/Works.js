@@ -36,24 +36,18 @@ const objectives = [
 function Works() {
   return (
     <Box mt='-120px' id='masonry'>
+      <Box bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
+        <WordMarquee words={objectives} />
+      </Box>
       <Heading
+        mt='40px'
         textAlign='center'
         fontSize={{ md: "80px", base: "32px" }}
-        py='80px'
       >
-        THE PROOF IS IN THE{" "}
-        <Box as='span' textDecor='line-through'>
-          PUDDING
-        </Box>{" "}
-        PORTFOLIO
+        THE PROOF IS IN THE PORTFOLIO
       </Heading>
-      <Box bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
-        <WordMarquee words={industries} />
-      </Box>
+
       <WorksMasonry />
-      <Box bgColor='rgb(85, 107, 47,.8)' py='40px' gap='40px'>
-        <WordMarquee words={objectives} direction='left' />
-      </Box>
     </Box>
   );
 }
