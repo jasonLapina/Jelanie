@@ -37,10 +37,12 @@ export default function HeroMarquee() {
             width={420}
             height={420}
             alt={pic}
-            src={`/assets/work_samples/${pic}`}
+            src={`https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/${pic}`}
           />
         </Box>
       ))}
     </Marquee>
   );
 }
+
+// https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/5minSkin.jpg
