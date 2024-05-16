@@ -5,6 +5,7 @@ import {
   useDisclosure,
   Box,
   Center,
+  Image as ChakImage,
 } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -57,10 +58,8 @@ function MasonryModal({ src, height }) {
       <Modal isOpen={isOpen} onClose={onClose} blockScrollOnMount={false}>
         <ModalOverlay />
         <ModalContent>
-          <Image
-            alt='work sample'
+          <ChakImage
             src={`https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/${src}`}
-            loading='lazy'
           />
         </ModalContent>
       </Modal>

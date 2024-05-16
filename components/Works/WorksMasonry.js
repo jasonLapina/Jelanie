@@ -6,7 +6,7 @@ export default function WorksMasonry() {
   const masonItems = useMemo(
     () => [
       {
-        src: "5minSkin.png",
+        src: "5minSkin.jpg",
         height: "300",
       },
       {
@@ -22,7 +22,7 @@ export default function WorksMasonry() {
         height: "190",
       },
       {
-        src: "daisy2.png",
+        src: "daisy2.jpg",
         height: "320",
       },
 
@@ -31,7 +31,7 @@ export default function WorksMasonry() {
         height: "210",
       },
       {
-        src: "brute_force.png",
+        src: "brute_force.jpg",
         height: "200",
       },
       {
@@ -39,7 +39,7 @@ export default function WorksMasonry() {
         height: "240",
       },
       {
-        src: "cru.webp",
+        src: "cru.jpg",
         height: "210",
       },
 
@@ -48,7 +48,7 @@ export default function WorksMasonry() {
         height: "280",
       },
       {
-        src: "daisy.png",
+        src: "daisy.jpg",
         height: "350",
       },
       {
@@ -56,7 +56,7 @@ export default function WorksMasonry() {
         height: "600",
       },
       {
-        src: "sleep_steady.png",
+        src: "sleep_steady.jpg",
         height: "400",
       },
 
@@ -83,7 +83,7 @@ export default function WorksMasonry() {
         height: "680",
       },
       {
-        src: "paddie.png",
+        src: "paddie.jpg",
         height: "260",
       },
       {
@@ -101,7 +101,7 @@ export default function WorksMasonry() {
       },
 
       {
-        src: "sleep_steady2.png",
+        src: "sleep_steady2.jpg",
         height: "240",
       },
       {
