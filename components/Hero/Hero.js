@@ -1,20 +1,14 @@
-import {
-  Box,
-  Grid,
-  HStack,
-  Heading,
-  Image,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import {Box, Grid, Heading, HStack, Text, VStack,} from "@chakra-ui/react";
+
 
 import MyBtn from "../shared/MyBtn";
 
 import "@fontsource/rampart-one";
-import { motion } from "framer-motion";
+import {motion} from "framer-motion";
 
 import HeroHeading from "./HeroHeading";
 import HeroMarquee from "./HeroMarquee";
+
 
 function Hero() {
   return (

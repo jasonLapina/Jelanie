@@ -1,4 +1,4 @@
-import { Box, useMediaQuery } from "@chakra-ui/react";
+import {Box, useMediaQuery} from "@chakra-ui/react";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
@@ -37,7 +37,7 @@ export default function HeroMarquee() {
             width={420}
             height={420}
             alt={pic}
-            src={`https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/${pic}`}
+            src={`/${pic}`}
           />
         </Box>
       ))}
