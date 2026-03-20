@@ -1,12 +1,4 @@
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  useDisclosure,
-  Box,
-  Center,
-  Image as ChakImage,
-} from "@chakra-ui/react";
+import {Box, Center, Image as ChakImage, Modal, ModalContent, ModalOverlay, useDisclosure,} from "@chakra-ui/react";
 import Image from "next/image";
 
 function MasonryModal({ src, height }) {
@@ -28,7 +20,7 @@ function MasonryModal({ src, height }) {
       >
         <Image
           alt='work sample'
-          src={`https://eoaewyjlaebxhoeszleb.supabase.co/storage/v1/object/public/samples/${src}`}
+          src={`/${src}`}
           style={{ transition: "all .4s" }}
           objectFit='cover'
           objectPosition='top'
